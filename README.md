@@ -1,4 +1,4 @@
-# ARC
+# Hashitalk Brazil 2020
 
 ## Requirements
 
