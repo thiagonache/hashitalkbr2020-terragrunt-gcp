@@ -43,7 +43,7 @@ Set variables to be used on the shell commands
 export TGCODE=~/dev/hashitalkbr2020-terragrunt-gcp
 export ENV=dev
 export ENV_PATH="${TGCODE}/${ENV}"
-export REGION=us-east4
+export REGION=us-central1
 export PREFIX=hstlkbr
 ```
 
