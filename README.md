@@ -27,12 +27,12 @@
 
    ```
    $ gcloud projects create hstlkbr2020-global-seed --organization [REDACTRED]
-   $ gcloud beta billing projects link hstlkbr2020-global-seed --billing-account=[REDACTED]`
+   $ gcloud beta billing projects link hstlkbr2020-global-seed --billing-account=[REDACTED]
    ```
 
    ```
    $ gcloud projects create hstlkbr2020-dev-seed --organization [REDACTRED]
-   $ gcloud beta billing projects link hstlkbr2020-dev-seed --billing-account=[REDACTED]`
+   $ gcloud beta billing projects link hstlkbr2020-dev-seed --billing-account=[REDACTED]
    ```
 
 ## Variables
@@ -40,11 +40,11 @@
 Set variables to be used on the shell commands
 
 ```
-export TGCODE=~/dev/arc/application-readiness-cloud
+export TGCODE=~/dev/hashitalkbr2020-terragrunt-gcp
 export ENV=dev
 export ENV_PATH="${TGCODE}/${ENV}"
 export REGION=us-east4
-export PREFIX=arc
+export PREFIX=hstlkbr
 ```
 
 ## Routine / Function
