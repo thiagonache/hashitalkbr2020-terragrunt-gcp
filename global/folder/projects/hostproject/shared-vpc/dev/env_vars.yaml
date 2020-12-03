@@ -1,0 +1,2 @@
+environment: dev
+subnet_private_access: true

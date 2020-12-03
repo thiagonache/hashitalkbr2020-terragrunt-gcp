@@ -1,0 +1,7 @@
+# Prevents members from creating user-managed service account keys.
+# Documentation: https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints
+constraint: "constraints/iam.disableServiceAccountKeyCreation"
+enforce: false # vault manages GCP SA
+source_module:
+  tag: "v3.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-org-policy.git"

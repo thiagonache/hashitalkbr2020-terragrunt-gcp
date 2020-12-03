@@ -1,0 +1,6 @@
+network_name: "network-main"
+prevent_destroy: true
+shared_vpc_host: true
+source_module:
+  tag: "v2.5.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-network.git"

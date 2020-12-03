@@ -1,0 +1,5 @@
+policy_mode: "authoritative"
+role: compute.networkUser
+source_module:
+  tag: "v6.1.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-iam.git//modules/projects_iam"

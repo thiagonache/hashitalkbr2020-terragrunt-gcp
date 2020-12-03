@@ -1,0 +1,3 @@
+source_module:
+  tag: "v1.3.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-cloud-nat.git"

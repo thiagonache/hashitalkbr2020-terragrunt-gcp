@@ -1,0 +1,9 @@
+# All VM instances created in new projects will have OS Login enabled. On new
+# and existing projects, this constraint prevents metadata updates that
+# disable OS Login at the project or instance level.
+# Documentation: https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints
+constraint: "constraints/compute.requireOsLogin"
+enforce: true
+source_module:
+  tag: "v3.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-org-policy.git"

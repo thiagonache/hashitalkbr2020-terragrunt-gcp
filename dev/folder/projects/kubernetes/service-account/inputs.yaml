@@ -1,0 +1,6 @@
+grant_xpn_roles: false
+prefix: "svc-acct"
+name: "gke-node-pool"
+source_module:
+  tag: "v2.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-service-accounts.git"

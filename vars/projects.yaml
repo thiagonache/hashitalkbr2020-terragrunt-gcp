@@ -1,0 +1,22 @@
+# GCP Servicos/APIs habilitados em todos os projetos
+activate_apis:
+  [
+    "admin.googleapis.com",
+    "cloudbilling.googleapis.com",
+    "cloudresourcemanager.googleapis.com",
+    "compute.googleapis.com",
+    "iam.googleapis.com",
+    "logging.googleapis.com",
+    "monitoring.googleapis.com",
+    "serviceusage.googleapis.com",
+  ]
+
+# GCP Billing Account para associar os projetos.
+billing_account: "0134A8-8E48A9-5932D5"
+
+# Pular passo para instalar GCLOUD (dependencia do modulo project-factory)
+# Na versao 10.0 do modulo project-factory GCLOUD nao vai mais ser necessario
+gcloud_skip_download: true
+
+# Nao usar organization policies nos projetos (talvez por falta de permissao)
+orgpolicies_skip_execution: false

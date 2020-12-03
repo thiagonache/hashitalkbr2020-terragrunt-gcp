@@ -1,0 +1,40 @@
+admins:
+  all:
+    - "user:tcarvalho@tnbctech.com"
+  dev:
+    - "user:thiagonbcarvalho@gmail.com"
+    - "user:tcarvalho@tnbctech.com"
+  global:
+    - "user:thiagonbcarvalho@gmail.com"
+  prod:
+    - "user:thiagonbcarvalho@gmail.com"
+    - "user:tcarvalho@tnbctech.com"
+  stage:
+    - "user:thiagonbcarvalho@gmail.com"
+    - "user:tcarvalho@tnbctech.com"
+
+# GCP Organization ID.
+org_id: "organizations/544628616434"
+
+# GCP Parent ID folder ou organization para os recursos.
+# Valores devem iniciar com organizations/ ou folders/
+parent: "folders/131938794455"
+
+# Prefixo para nomear os recursos (recomendacao entre 3 e 6 letras).
+# prefix: htlkbr
+prefix: hshtlkbr
+
+# Lista de identidades responsaveis pela segurança de redes
+security_owners:
+  - "user:thiagonbcarvalho@gmail.com"
+  # - "group:my-gsuite-list@my-domain.com"
+
+# Labels padrao para todos os modulos que aceitam labels
+labels:
+  criadopor: "terraform"
+  projeto: hashitalkbr2020
+  responsavel: thiago-nache
+
+# Essa variavel sera sempre 1 se voce seguir o design e permitir o acesso junto
+# com a criacao do projeto. Auto input para o modulo fabric-net-svpc-access
+service_project_num: 1

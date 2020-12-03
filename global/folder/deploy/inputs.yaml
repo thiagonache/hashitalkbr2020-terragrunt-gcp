@@ -1,0 +1,4 @@
+source_module:
+  tag: "v2.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-folders.git"
+set_roles: true

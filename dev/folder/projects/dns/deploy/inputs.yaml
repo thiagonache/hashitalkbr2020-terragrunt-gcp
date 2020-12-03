@@ -1,0 +1,7 @@
+activate_extra_apis:
+  - "dns.googleapis.com"
+labels: { contact: "networking-team", team: "networking", role: "dns" }
+name: "dns"
+source_module:
+  tag: "v9.2.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-project-factory.git"

@@ -1,0 +1,4 @@
+prevent_destroy: true
+source_module:
+  tag: "v1.1.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-kms.git"

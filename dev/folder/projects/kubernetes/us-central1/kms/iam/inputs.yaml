@@ -1,0 +1,6 @@
+policy_mode: "additive"
+project_roles:
+  - "roles/cloudkms.cryptoKeyEncrypterDecrypter"
+source_module:
+  tag: "v6.0.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-iam.git//modules/member_iam"

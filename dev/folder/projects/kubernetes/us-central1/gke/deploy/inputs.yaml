@@ -1,0 +1,50 @@
+kubernetes_version: "latest"
+
+node_pools:
+  - auto_repair: true # try to fix cluster automatically by replacing the node once an error is detected
+    auto_upgrade: true # automatically rollout nodes to upgrade minor versions (via rolling update)
+    disk_size_gb: 100 # disk size per node
+    disk_type: "pd-standard" # standard (HDD) ou ssd
+    image_type: "COS" # Google container optimized system
+    initial_node_count: 2 # per zone
+    local_ssd_count: 0 # local ephemeral disk per node
+    machine_type: "n1-standard-2" # must be available in region you are deploying the cluster
+    max_count: 6 # per zone
+    min_count: 2 # per zone
+    name: "main-node-pool" # unique name in this cluster
+    preemptible: true # much lower price but Google may preempt/delete the instance all of a sudden.
+
+node_pools_labels:
+  all:
+    team: "sre"
+    contact: "sre_team"
+    project: "arc"
+    environment: "env-template"
+  main-node-pool:
+    default-node-pool: true
+    role: "istio-ingress"
+  storage-node-pool:
+    role: "storage"
+
+node_pools_metadata:
+  all: {}
+  main-node-pool:
+    node-pool-metadata-custom-value: "main-node-pool"
+
+node_pools_oauth_scopes:
+  all:
+    - "https://www.googleapis.com/auth/cloud-platform"
+
+node_pools_tags:
+  all: []
+  main-node-pool:
+    - "main-node-pool"
+    - "istio-ingress"
+
+release_channel: "REGULAR"
+
+service_name: gke
+
+source_module:
+  tag: "v12.1.0"
+  url: "git::https://github.com/terraform-google-modules/terraform-google-kubernetes-engine.git//modules/beta-private-cluster"

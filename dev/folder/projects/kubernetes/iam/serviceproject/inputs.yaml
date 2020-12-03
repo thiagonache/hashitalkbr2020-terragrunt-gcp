@@ -1,0 +1,4 @@
+policy_mode: "additive"
+source_module:
+  tag: "v5.1.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-iam.git//modules/projects_iam"

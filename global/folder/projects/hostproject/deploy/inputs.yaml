@@ -1,0 +1,12 @@
+activate_extra_apis:
+  - "container.googleapis.com" # for shared vpc running k8s
+  - "iap.googleapis.com" # for compute authentication (ie bastion)
+
+labels:
+  { contact: "networking-team", team: "networking", role: "svpc-hostproject" }
+
+name: "hostproject"
+
+source_module:
+  tag: "v9.2.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-project-factory.git"

@@ -1,0 +1,9 @@
+networks:
+  - { name: "hshtlkbr-dev-us-central1-gke", new_bits: 6 }
+  - { name: "hshtlkbr-stage-us-east4-gke", new_bits: 6 }
+  - { name: "hshtlkbr-prod-us-central1-gke", new_bits: 6 }
+  - { name: "hshtlkbr-env-us-east4-gke", new_bits: 6 }
+
+source_module:
+  tag: "v1.0.0"
+  url: "git::git@github.com:hashicorp/terraform-cidr-subnets.git"

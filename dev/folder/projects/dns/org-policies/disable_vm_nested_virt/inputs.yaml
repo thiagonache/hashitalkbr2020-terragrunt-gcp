@@ -1,0 +1,7 @@
+# disables hardware-accelerated nested virtualization for all Compute Engine VMs
+# Documentation: https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints
+constraint: "constraints/compute.disableNestedVirtualization"
+enforce: true
+source_module:
+  tag: "v3.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-org-policy.git"

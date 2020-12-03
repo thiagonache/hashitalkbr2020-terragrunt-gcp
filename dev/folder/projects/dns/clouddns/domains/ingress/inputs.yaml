@@ -1,0 +1,4 @@
+source_module:
+  tag: "v3.0.1"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-cloud-dns.git"
+prevent_destroy: true # changing to false and destroying this module is going to broke the domain delegation which is required by design

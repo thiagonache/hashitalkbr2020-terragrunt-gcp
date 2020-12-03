@@ -1,0 +1,13 @@
+# This list constraint defines the set of Shared VPC host projects that
+# projects at or below this resource can attach to. By default, a project can
+# attach to any host project in the same organization, thereby becoming a
+# service project. Projects, folders, and organizations in allowed/denied
+# lists affect all objects underneath them in the resource hierarchy, and must
+# be specified in the form: under:organizations/ORGANIZATION_ID,
+# under:folders/FOLDER_ID, or projects/PROJECT_ID.
+# Documentation: https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints
+constraint: "constraints/compute.restrictSharedVpcHostProjects"
+enforce: false
+source_module:
+  tag: "v3.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-org-policy.git"

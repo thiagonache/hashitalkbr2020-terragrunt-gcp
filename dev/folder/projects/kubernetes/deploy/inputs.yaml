@@ -1,0 +1,13 @@
+activate_extra_apis:
+  - "container.googleapis.com"
+  - "iap.googleapis.com"
+  - "cloudkms.googleapis.com"
+
+labels:
+  { contact: "networking-team", team: "networking", role: "svpc-hostproject" }
+
+name: "kubernetes"
+
+source_module:
+  tag: "v9.2.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-project-factory.git"

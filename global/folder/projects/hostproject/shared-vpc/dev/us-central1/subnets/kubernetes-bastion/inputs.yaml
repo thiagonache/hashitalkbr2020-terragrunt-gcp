@@ -1,0 +1,4 @@
+source_module:
+  tag: "v2.5.0"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-network.git//modules/subnets"
+subnet_name: "bastion"

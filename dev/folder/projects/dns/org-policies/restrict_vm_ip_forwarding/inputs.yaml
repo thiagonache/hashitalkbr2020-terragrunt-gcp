@@ -1,0 +1,6 @@
+# set of VM instances that can enable IP forwarding
+constraint: "constraints/compute.vmCanIpForward"
+enforce: true
+source_module:
+  tag: "v3.0.2"
+  url: "git::git@github.com:terraform-google-modules/terraform-google-org-policy.git"

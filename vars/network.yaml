@@ -1,0 +1,35 @@
+# IP Addresses (VLSM)
+
+## RFC1918
+iana_private_classes_cidrs:
+  { "a": "10.0.0.0/8", "b": "172.16.0.0/12", "c": "192.168.0.0/16" }
+iana_private_classes_cidrs_bits: { "a": 8, "b": 12, "c": 16 }
+
+## Host subnets
+hosts_rfc1918_networkclass: "b" # IANA Classe B reservada para rede interna => rede 172.16.0.0 mascara 255.240.0.0 (cidr /12)
+hosts_subnets_newbits: 4 # Divide classe principal em 16 sub-redes => rede 172.16.0.0 mascara 255.255.0.0 (cidr /16)
+hosts_subnets_indexes: { "kubernetes": 0, "gateways": 1 }
+
+## K8s subnets (masters, pods, services e uma livre)
+k8s_rfc1918_networkclass: "a" # IANA Classe A reservada para rede interna => rede 10.0.0.0 mascara 255.0.0.0 (cidr /8)
+k8s_internal_newbits: 2 # Divide rede principal em 5 sub-redes => 10.0.0.0 mascara 255.192.0.0 (cidr /10)
+k8s_internal_indexes: {
+    "master": 0, # 10.0.0.0/10
+    "pods": 1, # 10.64.0.0/10
+    "services": 2, # 10.128.0.0/10
+    "free": 3, # 10.192.0.0/10
+  }
+k8s_master_newbits: 8 # Divide a rede dos masters em /18 totalizando 256 redes => rede 10.0.0.0 mascara 255.255.192.0 (cidr /18)
+k8s_pods_newbits: undef
+k8s_services_newbits: undef
+
+# Net Admins
+network_iam_members: ["user:thiagonbcarvalho@gmail.com"]
+
+# DNS
+domain_name: "tnbctech.com"
+sub_domain: "hashitalkbr2020"
+dns_type: "public"
+
+# Subnets
+subnet_private_access: false
