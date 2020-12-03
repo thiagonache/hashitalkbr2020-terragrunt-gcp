@@ -26,12 +26,12 @@
    Eg.:
 
    ```
-   $ gcloud projects create hstlkbr2020-global-seed --organization [REDACTRED]
+   $ gcloud projects create hstlkbr2020-global-seed --folder [REDACTRED]
    $ gcloud beta billing projects link hstlkbr2020-global-seed --billing-account=[REDACTED]
    ```
 
    ```
-   $ gcloud projects create hstlkbr2020-dev-seed --organization [REDACTRED]
+   $ gcloud projects create hstlkbr2020-dev-seed --folder [REDACTRED]
    $ gcloud beta billing projects link hstlkbr2020-dev-seed --billing-account=[REDACTED]
    ```
 
