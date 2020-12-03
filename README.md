@@ -3,12 +3,15 @@
 ## Requirements
 
 1. GCP Organization
+
    Follow the documentation [quickstart-organizations](https://cloud.google.com/resource-manager/docs/quickstart-organizations)
 
 1. GCP Billing Account
+
    Follow the documentation [manage-billing-account](https://cloud.google.com/billing/docs/how-to/manage-billing-account)
 
 1. GCP Folder
+
    Documentation at
    [creating-managing-folders](https://cloud.google.com/resource-manager/docs/creating-managing-folders)
 
@@ -17,6 +20,7 @@
    `$ gcloud resource-manager folders create --organization=[REDACTED] --display-name=MY_FOLDER`
 
 1. Two GCP projects
+
    We need two storage buckets on isolated projects. That said, create two new projects in a pre created folder. Documentation at [creating-managing-projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 
    Eg.:
